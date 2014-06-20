@@ -12,11 +12,19 @@ Here are the data for the project:
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip] [2] 
 
 You should create one R script called run_analysis.R that does the following.   
-  1. Merges the training and the test sets to create one data set.  
-  2. Extracts only the measurements on the mean and standard deviation for each measurement.   
-  3. Uses descriptive activity names to name the activities in the data set.  
-  4. Appropriately labels the data set with descriptive variable names.  
-  5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+	1. Merges the training and the test sets to create one data set.  
+	2. Extracts only the measurements on the mean and standard deviation for each measurement.   
+	3. Uses descriptive activity names to name the activities in the data set.  
+	4. Appropriately labels the data set with descriptive variable names.  
+	5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 [1]: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 [2]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+***
+1. Set a file name "getclean2" on destop as the working directory. If not, the script will create one for instead.
+2. Check if the required data exists in the file. If not, it will download and unzip to the working directory.
+3. Read the data, and the labels file separately.
+4. Find the mean and the sd value for each measurement and extract them.
+5. Merge the test and train data into one big dataset.
+6. Create a second, independent dataset with averaging each variable for each activity and each subject, and output as a text file.
