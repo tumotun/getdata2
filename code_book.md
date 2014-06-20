@@ -4,7 +4,7 @@
 ##Set working directory
 The function will look up if "getclean2" exists on desktop or not. If it does, set it as working directory, or create one.	
 
-	Then the function will check if the data package exists or not. If not, download one from the internet and unzip it.  
+Then the function will check if the data package exists or not. If not, download one from the internet and unzip it.  
  
 ```
 if (!file.exists("~/Desktop/getclean2")) {
